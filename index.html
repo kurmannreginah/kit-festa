@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit Festa · renda extra com kits de festa</title>
+<meta name="description" content="App com 9 kits de festa prontos para vender: receita passo a passo, foto do kit montado, preço sugerido e lucro calculado. R$ 29,90, acesso imediato no celular.">
+<meta property="og:title" content="Kit Festa · faça e venda kits de festa">
+<meta property="og:description" content="Receita, foto e preço já prontos. R$ 29,90, acesso imediato.">
+<meta property="og:image" content="https://kurmannreginah.github.io/kit-festa/img/hero.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--rosa:#d9466f;--rosa2:#f07a9a;--choc:#4a2a1f;--suave:#7a5548;--creme:#fff6ec;--ouro:#e0a12b;--rosac:#fde3ea;--verde:#2f8f5b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Nunito',system-ui,sans-serif;color:var(--choc);background:var(--creme);line-height:1.5;font-size:18px}
+img{max-width:100%;display:block;height:auto}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:'Baloo 2',system-ui,sans-serif;line-height:1.05;margin:0;color:var(--choc)}
+h1{font-size:clamp(32px,6.4vw,62px);overflow-wrap:break-word}h2{font-size:clamp(30px,4.6vw,44px)}h3{font-size:24px}
+h1 em,h2 em{font-style:normal;color:var(--rosa)}
+.eyebrow{display:inline-block;font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:13px;color:var(--rosa);background:#fff;border-radius:999px;padding:6px 14px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--rosa),var(--rosa2));color:#fff;text-decoration:none;font-family:'Baloo 2';font-weight:800;font-size:22px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 26px rgba(217,70,111,.32);text-align:center}
+.btn:hover{filter:brightness(1.06)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-weight:800;font-size:15px;color:var(--suave)}
+section{padding:68px 0}
+.hero{background:linear-gradient(180deg,#fde3ea,var(--creme));padding:28px 0 64px}
+.logo{width:150px;margin-bottom:18px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px;align-items:center}
+.hero p.sub{font-size:20px;font-weight:700;color:var(--suave);margin:16px 0 24px}
+.dor{background:#fff}
+.dor-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:36px;align-items:center}
+.quotes{display:grid;gap:10px;margin:22px 0}
+.quote{background:var(--rosac);border-radius:18px;padding:14px 18px;font-weight:800}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.tag{background:var(--choc);color:#fff;border-radius:10px;padding:8px 14px;font-weight:900;font-size:14px;letter-spacing:.08em}
+.mulher{border-radius:28px;box-shadow:0 18px 40px rgba(74,42,31,.18)}
+.app{background:var(--creme)}
+.four{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:26px 0}
+.four div{background:#fff;border-radius:22px;padding:20px;font-weight:800;border:3px solid #f6dfe5}
+.four b{display:block;font-size:30px}
+.how{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+.step{background:var(--creme);border-radius:24px;padding:24px}
+.step b{display:inline-block;font-family:'Baloo 2';font-size:18px;color:#fff;background:var(--ouro);border-radius:999px;padding:4px 14px;margin-bottom:10px}
+.wide{margin:30px auto 0;max-width:900px}
+.kits{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:24px}
+.kit{background:#fff;border-radius:18px;padding:14px;border:2px solid #f6dfe5;font-weight:800;font-size:16px}
+.kit span{display:block;color:var(--verde);font-size:14px;font-weight:900;margin-top:4px}
+.gets{background:var(--creme)}
+.get{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;align-items:center;margin-top:34px}
+.get:nth-child(even) .get-img{order:2}
+.get-img img{max-width:340px;margin:0 auto}
+.get p{margin:8px 0 0;font-weight:700;color:var(--suave)}
+.offer{background:linear-gradient(180deg,#fde3ea,var(--creme))}
+.box{max-width:560px;margin:28px auto 0;background:#fff;border-radius:30px;padding:30px;box-shadow:0 20px 40px rgba(217,70,111,.16);text-align:center}
+.box ul{list-style:none;padding:0;margin:0 0 18px;text-align:left}
+.box li{padding:10px 0;border-bottom:2px dashed #f1e2dc;font-weight:800}
+.box li:before{content:'✓ ';color:var(--verde);font-weight:900}
+.price{font-family:'Baloo 2';font-size:72px;color:var(--rosa);line-height:1;margin:10px 0 4px}
+.small{font-size:15px;color:var(--suave);font-weight:700}
+.guar{display:flex;gap:20px;align-items:center;max-width:740px;margin:0 auto;background:#fff;border-radius:28px;padding:26px;border:3px solid #f6dfe5}
+.seal{flex:0 0 100px;height:100px;border-radius:50%;background:var(--ouro);color:#fff;display:grid;place-items:center;text-align:center;font-family:'Baloo 2';font-weight:800;line-height:1;font-size:15px}
+.seal b{font-size:40px;display:block}
+.faq details{background:#fff;border-radius:18px;padding:16px 20px;margin-top:12px;border:2px solid #f6dfe5}
+.faq summary{font-weight:900;cursor:pointer}
+.aviso{font-size:14px;color:var(--suave);background:#fff;border-radius:16px;padding:16px 18px;margin-top:26px;border:1px solid #efe1db}
+footer{padding:36px 0 110px;text-align:center;font-size:14px;color:var(--suave)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;box-shadow:0 -6px 20px rgba(0,0,0,.08);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:9}
+.bar .btn{font-size:18px;padding:12px 22px}
+@media (max-width:760px){.hero-grid,.dor-grid,.get{grid-template-columns:minmax(0,1fr)}.get:nth-child(even) .get-img{order:0}.guar{flex-direction:column;text-align:center}section{padding:52px 0}.btn{width:100%}.bar .btn{width:auto}}
+</style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','192744874953400');fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Kit Festa',value:29.90,currency:'BRL'});
+var CHECKOUT='https://pay.kiwify.com.br/Gj9lpDu';
+document.addEventListener('DOMContentLoaded',function(){var q=location.search.slice(1);document.querySelectorAll('a.buy').forEach(function(a){a.href=CHECKOUT+(q?(CHECKOUT.indexOf('?')<0?'?':'&')+q:'')})});
+var _ic=false;document.addEventListener('click',function(e){var a=e.target.closest('a.buy');if(a&&!_ic){_ic=true;fbq('track','InitiateCheckout',{content_name:'Kit Festa',value:29.90,currency:'BRL'});}});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=192744874953400&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+<img class="logo" src="img/logo.webp" alt="Kit Festa">
+<div class="hero-grid">
+<div>
+<span class="eyebrow">✦ Oferta de lançamento</span>
+<h1 style="margin-top:14px">Faça e venda <em>kits de festa</em> com a receita, a foto e o preço já prontos</h1>
+<p class="sub">Não precisa ter experiência nem descobrir nada sozinha. O app mostra a receita passo a passo, a foto do kit montado, o preço sugerido e quanto sobra para você.</p>
+<a class="btn buy" href="https://pay.kiwify.com.br/Gj9lpDu">Quero minha renda extra · R$ 29,90</a>
+<div class="trust"><span>⚡ Acesso imediato</span><span>📱 No celular, sem instalar</span><span>🛡️ 7 dias de garantia</span></div>
+</div>
+<div><img src="img/hero.webp" alt="App Kit Festa no celular com o Kit Só Docinhos e o lucro calculado" width="900" height="826"></div>
+</div>
+</div></header>
+
+<section class="dor"><div class="wrap dor-grid">
+<div>
+<span class="eyebrow">Você já pensou nisso?</span>
+<h2 style="margin-top:12px">"Queria fazer um <em>dinheiro extra</em> em casa…"</h2>
+<p style="font-weight:700;margin-top:14px">E na hora vem a trava:</p>
+<div class="quotes">
+<div class="quote">"Fazer o quê?"</div>
+<div class="quote">"Por quanto eu vendo?"</div>
+<div class="quote">"E se eu sair no prejuízo?"</div>
+</div>
+<p style="font-weight:700">Aí você assiste três vídeos, salva uns prints, anota uma receita num caderno que some… e não sai do lugar.</p>
+<div class="tags"><span class="tag">A CONTA APERTA</span><span class="tag">O MÊS VIRA</span><span class="tag">O BOLETO CHEGA</span></div>
+<p style="font-size:20px;font-weight:900">Não é falta de vontade. Faltava alguém entregar o caminho pronto, do primeiro ingrediente até o preço de venda.</p>
+</div>
+<div><img class="mulher" src="img/mulher.webp" alt="Mulher com dúvida, olhando receitas no tablet" width="700" height="878" loading="lazy"></div>
+</div></section>
+
+<section class="app"><div class="wrap">
+<div style="text-align:center"><span class="eyebrow">É para isso que existe o Kit Festa</span>
+<h2 style="margin-top:12px">Um app com <em>9 kits de festa</em> prontos para vender</h2>
+<p style="font-weight:700;color:var(--suave);max-width:700px;margin:12px auto 0">E de cada kit você recebe tudo:</p></div>
+<div class="four">
+<div><b>📝</b>A receita passo a passo</div>
+<div><b>📸</b>A foto do kit montado</div>
+<div><b>🏷️</b>O preço sugerido para cobrar</div>
+<div><b>💰</b>Quanto você lucra em cada venda</div>
+</div>
+<p style="text-align:center;font-weight:800;max-width:760px;margin:0 auto">Muito curso de doces te deixa sozinha na parte difícil: <u>precificar e vender</u>. O Kit Festa entrega o negócio montado, da cozinha ao caixa.</p>
+<div class="kits">
+<div class="kit">🎂 Aniversário Essencial<span>vende por R$ 60</span></div>
+<div class="kit">🎉 Festa Completo<span>vende por R$ 100</span></div>
+<div class="kit">🍬 Só Docinhos<span>vende por R$ 55</span></div>
+<div class="kit">🥟 Só Salgados<span>vende por R$ 58</span></div>
+<div class="kit">🍰 Bolo no Pote<span>vende por R$ 70</span></div>
+<div class="kit">🎈 Kids Colorido<span>vende por R$ 60</span></div>
+<div class="kit">🫖 Chá da Tarde<span>vende por R$ 65</span></div>
+<div class="kit">✨ Gourmet Premium<span>vende por R$ 100</span></div>
+<div class="kit">💼 Reunião / Trabalho<span>vende por R$ 80</span></div>
+</div>
+<p class="small" style="text-align:center;margin-top:12px">Preços sugeridos pelo app. Você ajusta ao custo dos ingredientes na sua cidade.</p>
+</div></section>
+
+<section class="how"><div class="wrap">
+<div style="text-align:center"><span class="eyebrow">Como funciona</span><h2 style="margin-top:12px">3 passos: <em>escolhe, faz e vende</em></h2></div>
+<div class="steps">
+<div class="step"><b>1 · ESCOLHE</b><h3>Um dos 9 kits</h3><p>Você vê a foto do kit pronto antes mesmo de comprar o primeiro ingrediente.</p></div>
+<div class="step"><b>2 · FAZ</b><h3>Segue a receita</h3><p>Passo a passo, escrita para quem nunca fez. Sem termo técnico e sem enrolação.</p></div>
+<div class="step"><b>3 · VENDE</b><h3>Manda no zap</h3><p>Foto no status, no grupo da família, para as vizinhas. O preço e o lucro já estão calculados.</p></div>
+</div>
+<img class="wide" src="img/passos.webp" alt="Telas do app: escolher o kit, ver a receita e vender" width="1100" height="698" loading="lazy">
+<p style="text-align:center;font-weight:900;font-size:20px;margin-top:18px">Do celular na mão ao primeiro kit vendido: dá para começar neste fim de semana.</p>
+<div style="text-align:center;margin-top:10px"><a class="btn buy" href="https://pay.kiwify.com.br/Gj9lpDu">Quero começar · R$ 29,90</a></div>
+</div></section>
+
+<section class="gets"><div class="wrap">
+<div style="text-align:center"><span class="eyebrow">O que você recebe</span><h2 style="margin-top:12px">Tudo dentro do app</h2></div>
+<div>
+<div class="get"><div class="get-img"><img src="img/kits.webp" alt="Catálogo de kits no app" width="640" height="718" loading="lazy"></div><div><h3>9 kits prontos para vender</h3><p>Aniversário, Só Docinhos, Só Salgados, Bolo no Pote, Kids, Gourmet e mais. Cada um pensado para um tipo de cliente e de bolso.</p></div></div>
+<div class="get"><div class="get-img"><img src="img/receitas.webp" alt="Receitas no app" width="640" height="684" loading="lazy"></div><div><h3>As receitas de tudo</h3><p>Brigadeiro, beijinho, coxinha, surpresa de uva, bolo de pote… passo a passo, para quem está começando do zero.</p></div></div>
+<div class="get"><div class="get-img"><img src="img/foto.webp" alt="Foto do kit montado" width="640" height="646" loading="lazy"></div><div><h3>A foto do kit montado</h3><p>Você vê o resultado antes de fazer e usa a foto para montar seu catálogo e mandar para a cliente.</p></div></div>
+<div class="get"><div class="get-img"><img src="img/lucro.webp" alt="Preço e lucro do kit no app" width="640" height="680" loading="lazy"></div><div><h3>Preço e lucro já calculados</h3><p>Chega de chutar preço e descobrir no fim do mês que trabalhou de graça.</p></div></div>
+<div class="get"><div class="get-img"><img src="img/calc.webp" alt="Calculadora de custos" width="640" height="673" loading="lazy"></div><div><h3>Calculadora de custos</h3><p>Coloque o preço dos ingredientes da sua cidade e o app recalcula o lucro na hora.</p></div></div>
+<div class="get"><div class="get-img"><img src="img/meta.webp" alt="Meta mensal no app" width="640" height="692" loading="lazy"></div><div><h3>A meta que te guia</h3><p>Diga quanto quer ganhar no mês e o app mostra quantos kits precisa vender para chegar lá.</p></div></div>
+</div>
+</div></section>
+
+<section class="offer" id="oferta"><div class="wrap">
+<div style="text-align:center"><span class="eyebrow">Preço de lançamento</span><h2 style="margin-top:12px">Um kit vendido já paga o app <em>duas vezes</em></h2></div>
+<div class="box">
+<img src="img/apresenta.webp" alt="App Kit Festa e kits montados" width="900" height="689" loading="lazy" style="margin-bottom:14px">
+<ul>
+<li>9 kits de festa prontos</li>
+<li>Receitas passo a passo</li>
+<li>Fotos dos kits montados</li>
+<li>Preço e lucro calculados</li>
+<li>Calculadora de custos</li>
+<li>Meta guiada</li>
+</ul>
+<div class="small">pagamento único</div>
+<div class="price">R$ 29,90</div>
+<div class="small" style="margin-bottom:18px">Pix ou cartão · acesso imediato no celular</div>
+<a class="btn buy" href="https://pay.kiwify.com.br/Gj9lpDu">Quero começar agora</a>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="guar"><div class="seal"><span><b>7</b>dias de<br>garantia</span></div><div><h3>O risco é todo nosso</h3><p style="margin:6px 0 0">Entre, abra o app, olhe os kits, leia as receitas e teste a calculadora. Se em até 7 dias achar que não é para você, peça o reembolso pela própria Kiwify e receba 100% do valor.</p></div></div>
+</div></section>
+
+<section class="faq" style="padding-top:0"><div class="wrap">
+<h2>Perguntas frequentes</h2>
+<details><summary>Nunca fiz doce nem salgado. Serve para mim?</summary><p>Serve. As receitas são passo a passo, em linguagem simples, para quem está começando do zero.</p></details>
+<details><summary>Preciso baixar alguma coisa?</summary><p>Não. O app abre no navegador do celular e funciona em qualquer aparelho. Você pode salvar um atalho na tela inicial.</p></details>
+<details><summary>Como recebo o acesso?</summary><p>Logo após o pagamento chega no seu e-mail o acesso à área de membros, com o link do app.</p></details>
+<details><summary>Os preços servem para a minha cidade?</summary><p>São estimativas. Na calculadora você coloca o preço dos ingredientes do seu mercado e o lucro é recalculado.</p></details>
+<details><summary>Preciso de MEI para vender?</summary><p>Para vender comida de forma regular, o ideal é ter MEI e seguir as boas práticas de higiene. As regras variam por município, então consulte a sua prefeitura.</p></details>
+</div>
+<div class="wrap"><div class="aviso"><b>Aviso:</b> o Kit Festa é um material educativo de receitas e precificação. Não vende alimentos e não garante renda: o resultado depende da sua produção e divulgação. Os custos são estimativas e variam por região.</div></div>
+</section>
+
+<footer><div class="wrap">Kit Festa · pagamento processado com segurança pela Kiwify.</div></footer>
+<div class="bar"><div><b style="font-family:'Baloo 2';font-size:26px;color:var(--rosa)">R$ 29,90</b><div class="small">acesso imediato</div></div><a class="btn buy" href="https://pay.kiwify.com.br/Gj9lpDu">Quero o Kit Festa</a></div>
+</body></html>
